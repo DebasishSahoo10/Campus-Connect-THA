@@ -20,24 +20,26 @@ export const TopNav = () => {
                 <a href="" className="text-[#A2A3A2]  lg:block hidden">Learn</a>
                 <a href="" className="gap-2 justify-center items-center font-semibold  lg:flex hidden">Oppertunities<span className="bg-[#1B63F2] px-2  rounded-full text-white text-xs py-0.5 font-normal">Hiring</span></a>
 
-                <div className="flex items-center gap-1">
-                    <Avatar className="w-[32px] lg:w-[40px] h-[auto]">
-                        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                        <AvatarFallback>CN</AvatarFallback>
-                    </Avatar>
-                    <DropdownMenu>
-                        <DropdownMenuTrigger asChild className="block lg:hidden">
-                            <ChevronDown className="w-[15px] h-[auto]" />
-                        </DropdownMenuTrigger>
-                        <DropdownMenuContent className="flex flex-col w-[200px] justify-center items-center gap-4 mr-2 mt-2">
-                            <a href="" className="text-[#A2A3A2]">Home</a>
-                            <a href="" className="text-[#A2A3A2]">Network</a>
-                            <a href="" className="text-[#A2A3A2]">Learn</a>
-                            <a href="" className="gap-2 justify-center items-center font-semibold">Oppertunities</a>
-                        </DropdownMenuContent>
-                    </DropdownMenu>
 
-                </div>
+
+                <DropdownMenu>
+                    <DropdownMenuTrigger asChild className="block lg:hidden">
+                        <div className="flex items-center gap-1">
+                            <Avatar className="w-[32px] lg:w-[40px] h-[auto]">
+                                <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                <AvatarFallback>CN</AvatarFallback>
+                            </Avatar>
+                            <ChevronDown className="w-[15px] h-[auto]" />
+                        </div>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent className="flex flex-col w-[200px] justify-center items-center gap-4 mr-2 mt-2">
+                        <a href="" className="text-[#A2A3A2]">Home</a>
+                        <a href="" className="text-[#A2A3A2]">Network</a>
+                        <a href="" className="text-[#A2A3A2]">Learn</a>
+                        <a href="" className="gap-2 justify-center items-center font-semibold">Oppertunities</a>
+                    </DropdownMenuContent>
+                </DropdownMenu>
+
             </div>
         </div >
     )
