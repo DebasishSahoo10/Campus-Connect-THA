@@ -75,7 +75,7 @@ export const Accordions : React.FC<AccordionPropType> = ({categorySetter, catego
                                         htmlFor={payType}
                                         className="text-base font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                                     >
-                                        {payType}
+                                    
                                     </label>
                                 </div>
                                 <div>
